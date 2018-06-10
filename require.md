@@ -18,3 +18,5 @@ Si la personne a moins de 21 ans, la fonction s'arrête immédiatement et rembou
 # A vous de jouer :
 > * Limiter l'accès à votre fonction get() pour n'autoriser que le propriétaire
 > * Limiter l'accès à votre fonction get() pour ne pas renvoyer le message avant 1 an
+
+Félicitations, votre contrat est désormais terminé !

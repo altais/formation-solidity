@@ -1,6 +1,5 @@
 * Introduction
-  * [Présentation](/#formation-solidity)
-  * [Environnement](/#mettre-en-place-lenvironnement)
+  * [Présentation](/#initiation-ethereum)
 * Formation
   * [Consigne](consigne.md#)
   * [1 - Création du contrat](contract.md)
