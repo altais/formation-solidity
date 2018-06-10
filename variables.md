@@ -13,11 +13,11 @@ contract Example {
   uint myAge = 23;
 }
 ```
-Dans cet exemple de contrat, nous avons créé un uint appelé myAge qui a pour valeur 23.
-Vous pouvez trouver tous les types disponibles [ici](http://solidity.readthedocs.io/en/v0.4.24/types.html)
+Dans cet exemple de contrat, nous avons créé un `uint` appelé `myAge` qui a pour valeur 23.
+Vous pouvez trouver tous les types disponibles [ici.](http://solidity.readthedocs.io/en/v0.4.24/types.html)
 
 # À vous de jouer :
 > Créer dans votre contrat les variables :
-  * 'message' de type 'string'
-  * 'owner' de type 'address'
-  * 'createdTime' de type 'uint'
+  * 'message' de type `string`
+  * 'owner' de type `address`
+  * 'createdTime' de type `uint`

@@ -37,11 +37,10 @@ Après l'installation, cliquez sur l'icône de Metamask en haut à droite de vot
 	<img src="./img/installMetamask.png" width="50%">
 </p>
 
+Vous devez ensuite sauvegarder la phrase donnée par Metamask.
 
-Vous devez ensuite sauvegarder la phrase donné par Metamask
 
-
-> ATTENTION : Cette phrase est le seul moyen de récuperer votre compte, il est impossible de la récupérer ! Vous devez également impérativement la garder PRIVÉ ! (celle ci-dessous est un compte vide ;) )
+> ATTENTION : Cette phrase est le seul moyen de récupérer votre compte, il est impossible de la récupérer ! Vous devez également impérativement la garder PRIVÉE ! (celle ci-dessous est un compte vide ;-) )
 
 <p align="center">
 	<img src="./img/backupMetamask.png" width="50%">
@@ -51,7 +50,7 @@ Vous devez ensuite sauvegarder la phrase donné par Metamask
 # Récupérer des tokens
 
 Pour éviter de devoir dépenser de l'argent pour acheter des tokens, nous allons nous mettre sur un testnet Ethereum.
-Pour cela cliquez en haut à gauche de Metamask et choissisez Ropsten test network.
+Pour cela cliquez en haut à gauche de Metamask et choisissez Ropsten test network.
 <p align="center">
 	<img src="./img/changeNetwork.png" width="50%">
 </p>
@@ -103,4 +102,4 @@ Une adresse s'affiche dans le terminal, c'est l'adresse de votre contrat sur le 
 
 Félicitations ! Vous venez de déployer votre premier contrat sur Ethereum !
 
-Nous allons maintenant intéragir avec lui dans la prochaine partie
+Nous allons maintenant interagir avec lui dans la prochaine partie.
