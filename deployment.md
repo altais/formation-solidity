@@ -32,7 +32,7 @@ contract CapsuleTemporelle {
 ```
 
 
-# Déploiement du contrat
+# Déploiement du contrat #1
 
 Actuellement sur https://remix.ethereum.org/ nous avons utilisé les paramètres par défaut, soit la VM javascript pour faire nos tests. Nous n'avons pas directement publié le contrat sur la blockchain. C'est donc le moment de le faire !
 
@@ -43,3 +43,16 @@ Nous allons utiliser Metamask pour la créer, et pour interagir avec Ethereum de
 
 Après l'installation, cliquez sur l'icône de métamask en haut a droite de votre navigateur, acceptez les conditions d'utilisations et définissez un mot de passe.
 
+# Récuperer des tokens
+
+Pour éviter de devoir dépenser de l'argent pour acheter des tokens, nous allons nous mettre sur le testnet ethereum.
+Pour cela cliquez en haut a gauche et choissisez Ropsten test network puis cliquez sur buy puis enfin ROPSTEN TEST FAUCET. Sur le site, cliquez sur "request 1 ether from faucet"
+Après quelques minutes, vous voila désormais en possesion d'un Ethereum sur le Testnet !
+
+# Déploiement du contrat #2
+
+Retournez sur https://remix.ethereum.org/, rendez vous sur l'onglet RUN en haut a droite, cliquez sur ENVIRONNEMENT et choissisez Injected Web3
+Vous pouvez désormais remplir le champ message (situé à coté du bouton rouge deploy)
+> ATTENTION: Il faut mettre votre message entre guillemet pour que cela fonctionne
+Cliquez sur Deploy, et sur submit sur la fenetre metamask qui s'affiche
+Une adresse s'affiche dans le terminal, c'est l'adresse de votre contrat sur ethereum ! Félicitations !
