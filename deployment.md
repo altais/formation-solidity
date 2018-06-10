@@ -1,8 +1,8 @@
 # Votre contrat
-Félicitation, votre contrat est désormais terminé !
-Voici ci-dessous une des implémentations possible de ce contrat:
+Félicitations, votre contrat est désormais terminé !
+Voici ci-dessous une des implémentations possibles de ce contrat :
 
-> Require ne permettant pour le moment pas de retourner de message d'erreur, dans le cas ou c'est bien le propriétaire du contrat, j'ai décidé de renvoyer un message d'erreur au lieu de juste faire un require
+> Require ne permettant pour le moment pas de retourner de message d'erreur, dans le cas où c'est bien le propriétaire du contrat, j'ai décidé de renvoyer un message d'erreur au lieu de juste faire un require
 
 ```javascript
 pragma solidity ^0.4.24;
@@ -34,12 +34,12 @@ contract CapsuleTemporelle {
 
 # Déploiement du contrat
 
-Actuellement sur https://remix.ethereum.org/ nous avons utilisé les paramètres par défault, sois la VM javascript pour faire nos tests. Nous n'avons pas directement publié le contrat sur la blockchain. C'est donc le moment de le faire !
+Actuellement sur https://remix.ethereum.org/ nous avons utilisé les paramètres par défaut, soit la VM javascript pour faire nos tests. Nous n'avons pas directement publié le contrat sur la blockchain. C'est donc le moment de le faire !
 
 # Créer une adresse ethereum
 
-Pour intéragir avec la blockchain il vous faut une adresse ethereum.
-Nous allons utiliser métamask pour la creer, et pour intéragir avec ethereum depuis votre navigateur,: https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
+Pour interagir avec la blockchain il vous faut une adresse ethereum.
+Nous allons utiliser Metamask pour la créer, et pour interagir avec Ethereum depuis votre navigateur : https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 
-Aprés l'installation, cliquez sur l'icone de métamask en haut a droite de votre navigateur, acceptez les conditions d'utilisations et définissez un mot de passe.
+Après l'installation, cliquez sur l'icône de métamask en haut a droite de votre navigateur, acceptez les conditions d'utilisations et définissez un mot de passe.
 
