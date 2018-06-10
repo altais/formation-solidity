@@ -1,6 +1,6 @@
 # Intro à Web3.js
 
-Maintenant que notre contrat est déployer, voici une page web très basique vous permettant de voir votre message dans 1 an.
+Maintenant que notre contrat est déployer, [voici une page web]("/interface.html") très basique vous permettant de voir votre message dans 1 an.
 Elle restera en ligne et vous permettra de voir votre message dans 1 an si vous le souhaitez :)
 
 > ATTENTION: Il faudra réinstaller Metamask sur votre PC et importer votre clé privé !
