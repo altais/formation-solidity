@@ -41,18 +41,18 @@ Actuellement sur https://remix.ethereum.org/ nous avons utilisé les paramètres
 Pour interagir avec la blockchain il vous faut une adresse ethereum.
 Nous allons utiliser Metamask pour la créer, et pour interagir avec Ethereum depuis votre navigateur : https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 
-Après l'installation, cliquez sur l'icône de métamask en haut a droite de votre navigateur, acceptez les conditions d'utilisations et définissez un mot de passe.
+Après l'installation, cliquez sur l'icône de Metamask en haut à droite de votre navigateur, acceptez les conditions d'utilisations et définissez un mot de passe.
 
-# Récuperer des tokens
+# Récupérer des tokens
 
-Pour éviter de devoir dépenser de l'argent pour acheter des tokens, nous allons nous mettre sur le testnet ethereum.
-Pour cela cliquez en haut a gauche et choissisez Ropsten test network puis cliquez sur buy puis enfin ROPSTEN TEST FAUCET. Sur le site, cliquez sur "request 1 ether from faucet"
-Après quelques minutes, vous voila désormais en possesion d'un Ethereum sur le Testnet !
+Pour éviter de devoir dépenser de l'argent pour acheter des tokens, nous allons nous mettre sur un testnet Ethereum.
+Pour cela cliquez en haut à gauche de Metamask et choissisez Ropsten test network puis cliquez sur buy puis enfin ROPSTEN TEST FAUCET. Sur le site, cliquez sur "request 1 ether from faucet".
+Après quelques minutes, vous voilà désormais en possession d'un ether sur le testnet !
 
 # Déploiement du contrat #2
 
-Retournez sur https://remix.ethereum.org/, rendez vous sur l'onglet RUN en haut a droite, cliquez sur ENVIRONNEMENT et choissisez Injected Web3
-Vous pouvez désormais remplir le champ message (situé à coté du bouton rouge deploy)
-> ATTENTION: Il faut mettre votre message entre guillemet pour que cela fonctionne
-Cliquez sur Deploy, et sur submit sur la fenetre metamask qui s'affiche
-Une adresse s'affiche dans le terminal, c'est l'adresse de votre contrat sur ethereum ! Félicitations !
+Retournez sur https://remix.ethereum.org/, rendez-vous sur l'onglet RUN en haut à droite, cliquez sur ENVIRONNEMENT et choissisez Injected Web3.
+Vous pouvez désormais remplir le champ message (situé à côté du bouton rouge deploy).
+> ATTENTION: Il faut mettre votre message entre guillemets pour que cela fonctionne.
+Cliquez sur Deploy, et sur submit sur la fenêtre Metamask qui s'affiche.
+Une adresse s'affiche dans le terminal, c'est l'adresse de votre contrat sur le testnet Ethereum ! Félicitations !
