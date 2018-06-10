@@ -3,7 +3,7 @@
 	<img src="./img/timeCapsule.png" width="50%">
 </p>
 Pour ce tutoriel vous allait développer une time capsule :
-Le Principe ? S'écrire un message que l'on ne verra pas avant 1 an
+Le Principe ? S'écrire un message que l'on ne pourra pas relire avant 1 an.
 
 # Consigne
 Vous devez créer un contrat permettant de sauvegarder un message que vous avez écrit. Ce message ne dois pas être modifiable, ne dois pas pouvoir être récupéré avant 1 an, et ne peut être récupéré que par son propriétaire.

@@ -98,3 +98,9 @@ Une adresse s'affiche dans le terminal, c'est l'adresse de votre contrat sur le 
 	<img src="./img/confirmMetamask.png" width="50%">
 	<img src="./img/contractAddress.png" width="70%">
 </p>
+
+# Félicitations !
+
+Félicitations ! Vous venez de déployer votre premier contrat sur Ethereum !
+
+Nous allons maintenant intéragir avec lui dans la prochaine partie

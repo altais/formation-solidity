@@ -1,1 +1,47 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>TimeCapsule</title>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/ethereum/web3.js/1.0/dist/web3.min.js"></script>
+  </head>
+  <body>
+		<h1>TimeCapsule</h1>
+		<div>
+			<label for="address">Veuillez entrer l'adresse de votre contrat</label>
+			<input type="text" id="address" name="address" required>
+		</div>
+		<div>
+		<button type="button" onClick="getMessage();">Valider</button>
+
+		<h1>Votre message: </h1>
+		<h1 id="response"></h1>
+    <script>
+
+      window.addEventListener('load', function() {
+        if (typeof web3 !== 'undefined') {
+          web3 = new Web3(web3.currentProvider);
+        }
+	  })
+	  async function getMessage() {
+		const address = document.getElementById("address").value;
+		for (index = 0; index < 10; index++){
+			console.log(`[${index}]` +
+			console.log(web3.eth.getStorageAt(address, index)))
+		}
+
+		// const address = "0x37848af96c9de9d06243a98551492f8993b2f0cc"
+		const abi = [{"constant":true,"inputs":[],"name":"getMessage","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_message","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
+
+		const contract = new web3.eth.Contract(abi, address);
+		 contract.methods.getMessage().call({from: web3.eth.accounts[0]}).then(function(message){
+			 console.log(message)
+			 $("#response").text(message)
+		 })
+	}
+    </script>
+  </body>
+</html>
+
+
