@@ -26,10 +26,6 @@
 	  })
 	  async function getMessage() {
 		const address = document.getElementById("address").value;
-		for (index = 0; index < 10; index++){
-			console.log(`[${index}]` +
-			console.log(web3.eth.getStorageAt(address, index)))
-		}
 
 		// const address = "0x37848af96c9de9d06243a98551492f8993b2f0cc"
 		const abi = [{"constant":true,"inputs":[],"name":"getMessage","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_message","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
@@ -38,6 +34,8 @@
 		 contract.methods.getMessage().call({from: web3.eth.accounts[0]}).then(function(message){
 			 console.log(message)
 			 $("#response").text(message)
+		 }).catch(function(err){
+			 $("#response").text("Vous ne pouvez pas lire le message")
 		 })
 	}
     </script>
