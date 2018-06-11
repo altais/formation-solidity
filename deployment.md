@@ -23,7 +23,7 @@ contract TimeCapsule {
     }
 }
 ```
-> Require ne permettant pour le moment pas de retourner de message d'erreur, dans le cas où c'est bien le propriétaire du contrat, j'ai décidé de renvoyer un message d'erreur au lieu de juste faire un require
+> Require ne permettant pour le moment pas de retourner de message d'erreur, dans le cas où c'est bien le propriétaire du contrat, j'ai décidé de renvoyer un message d'erreur au lieu de juste faire un require.
 
 # Créer une adresse ethereum
 
@@ -74,7 +74,7 @@ Après quelques minutes, vous voilà désormais en possession d'un ether sur le 
 
 # Compilateur en ligne
 
-[Rendez-vous sur ce lien](https://remix.ethereum.org/#version=soljson-v0.4.24+commit.e67f0147.js&optimize=false&gist=78dbcb3b6f0a8748c6efe8f10e7aff0e) pour voir le code de TimeCapsule dans le compilateur Solidity
+[Rendez-vous sur ce lien](https://remix.ethereum.org/#version=soljson-v0.4.24+commit.e67f0147.js&optimize=false&gist=78dbcb3b6f0a8748c6efe8f10e7aff0e) pour voir le code de TimeCapsule dans le compilateur Solidity.
 
 Cliquez ensuite à gauche sur Gist puis Tutoriel.sol.
 <p align="center">
