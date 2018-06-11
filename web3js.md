@@ -7,6 +7,13 @@ Elle restera en ligne et vous permettra de voir votre message dans 1 an si vous 
 
 Sur cette page il vous suffit de rentrer l'adresse Ethereum de votre contrat pour pouvoir récupérer le message.
 
+> Pour récupérer l'adresse de votre contrat, rendez-vous sur le lien affiché dans la console, puis copier coller l'adresse situé dans la colonne To:[Contract Creation] 
+
+<p align="center">
+	<img src="./img/contractAddress.png" width="70%">
+	<img src="./img/etherscan.png" width="70%">
+</p>
+
 Pour tester au mieux votre contrat, je vous suggère de modifier la durée de 1 an par 1 `minutes` et de redéployer votre contrat.
 
 Vous pouvez donc voir votre message au bout de 1 min, et si vous essayez depuis le PC de votre voisin, aucun message ne s'affichera.
