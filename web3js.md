@@ -11,7 +11,7 @@ Sur cette page il vous suffit de rentrer l'adresse Ethereum de votre contrat pou
 
 <p align="center">
 	<img src="./img/contractAddress.png" width="70%">
-	<img src="./img/etherscan.png" width="70%">
+	<img src="./img/etherscan.png" width="100%">
 </p>
 
 Pour tester au mieux votre contrat, je vous suggère de modifier la durée de 1 an par 1 `minutes` et de redéployer votre contrat.
