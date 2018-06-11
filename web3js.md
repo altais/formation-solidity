@@ -16,11 +16,10 @@ Vous pouvez donc voir votre message au bout de 1 min, et si vous essayez depuis 
 Et pourtant si votre voisin veut lire votre message, malgré vos restrictions, il peut le faire !
 
 Ce tutoriel avait pour but de vous montrer comment écrire un contrat et le déployer, mais aussi de vous mettre en garde :
-
-Une blockchain est intrinsèquement publique : tout ce qui est dessus peut être lu par absolument tout le monde.
+une blockchain est intrinsèquement publique : tout ce qui est dessus peut être lu par absolument tout le monde.
 
 Votre fonction `getMessage()` ne peut en effet pas être appelé par quelqu'un d'autre que vous, et pas avant 1 an, mais vos variables, elles, sont lisibles !
 
-La technologie blockchain est très puissante attention, un grand pouvoir implique de grandes responsabilités! Vous devez être conscient de ce genre de problématiques lorsque vous développez votre contrat, car un contrat déployé ne peut plus JAMAIS être modifié !
+La technologie blockchain est très puissante, mais attention : un grand pouvoir implique de grandes responsabilités... Vous devez être conscient de ce genre de problématiques lorsque vous développez votre contrat, car un contrat déployé ne peut plus JAMAIS être modifié !
 
-Je vous laisse chercher par vous même de quelle manière vous pouvez lire les messages malgré les restrictions ;)
+Je vous laisse chercher par vous-même de quelle manière vous pouvez lire les messages malgré les restrictions ;)
