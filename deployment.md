@@ -70,6 +70,7 @@ Sur le site, cliquez sur "request 1 ether from faucet".
 
 Après quelques minutes, vous voilà désormais en possession d'un ether sur le testnet !
 
+> ATTENTION: Le site peut être un peut long, et si un message rouge s'affiche il suffit de recharger la page et de recommencer.
 
 
 # Compilateur en ligne
@@ -81,6 +82,9 @@ Cliquez ensuite à gauche sur Gist puis Tutoriel.sol.
 	<img src="./img/gist.png" width="50%">
 </p>
 
+# Compilation du contrat
+
+Cliquez sur `Start to compile` en haut à droite pour compiler votre contrat.
 
 # Déploiement du contrat
 
