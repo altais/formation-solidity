@@ -5,11 +5,11 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 	constructor(string _message) public {
 		message = _message;
-		createdTime = now;
+		creationTime = now;
 		owner = msg.sender;
 	}
 

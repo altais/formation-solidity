@@ -18,6 +18,6 @@ Vous pouvez trouver tous les types disponibles [ici.](http://solidity.readthedoc
 
 # À vous de jouer :
 > Créer dans votre contrat les variables :
-  * 'message' de type `string`
-  * 'owner' de type `address`
-  * 'createdTime' de type `uint`
+  * `message` de type `string`
+  * `owner` de type `address`
+  * `creationTime` de type `uint`
