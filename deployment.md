@@ -3,26 +3,24 @@
 pragma solidity ^0.4.24;
 
 contract TimeCapsule {
-    string message;
-    address owner;
-    uint creationtime;
+	string message;
+	address owner;
+	uint createdTime;
 
+	constructor(string _message) public {
+		message = _message;
+		createdTime = now;
+		owner = msg.sender;
+	}
 
-    constructor(string _message) public {
-        message = _message;
-        owner = msg.sender;
-        creationtime = block.timestamp;
-    }
-
-    function getMessage() public view returns (string) {
-        require(owner == msg.sender);
-        if (now > creationtime + 365 * 1 days) {
+	function getMessage() public view returns (string _message) {
+		require(owner == msg.sender);
+		if (now > creationTime + 365 days) {
             return message;
         } else {
             return "Vous ne pouvez pas lire le message avant 1 an !";
         }
     }
-
 }
 ```
 > Require ne permettant pour le moment pas de retourner de message d'erreur, dans le cas où c'est bien le propriétaire du contrat, j'ai décidé de renvoyer un message d'erreur au lieu de juste faire un require

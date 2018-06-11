@@ -2,7 +2,7 @@
 ```javascript
 pragma solidity ^0.4.24;
 
-contract CapsuleTemporelle {
+contract TimeCapsule {
 
 }
 ```
@@ -11,8 +11,10 @@ contract CapsuleTemporelle {
 ```javascript
 pragma solidity ^0.4.24;
 
-contract CapsuleTemporelle {
+contract TimeCapsule {
 	string message;
+	address owner;
+	uint createdTime;
 
 }
 ```
@@ -21,13 +23,16 @@ contract CapsuleTemporelle {
 ```javascript
 pragma solidity ^0.4.24;
 
-contract CapsuleTemporelle {
+contract TimeCapsule {
 	string message;
+	address owner;
+	uint createdTime;
 
 	constructor(string _message) public {
         message = _message;
-    }
-	function get() public view returns (string _message) {
+	}
+
+	function getMessage() public view returns (string _message) {
         return message;
     }
 }
@@ -37,15 +42,17 @@ contract CapsuleTemporelle {
 ```javascript
 pragma solidity ^0.4.24;
 
-contract CapsuleTemporelle {
+contract TimeCapsule {
 	string message;
 	address owner;
+	uint createdTime;
 
 	constructor(string _message) public {
-        message = _message;
-		owner = msg.sender;
-    }
-	function get() public view returns (string _message) {
+		message = _message;
+		createdTime = now;
+	}
+
+	function getMessage() public view returns (string _message) {
         return message;
     }
 }
@@ -55,17 +62,45 @@ contract CapsuleTemporelle {
 ```javascript
 pragma solidity ^0.4.24;
 
-contract CapsuleTemporelle {
+contract TimeCapsule {
 	string message;
 	address owner;
+	uint createdTime;
 
 	constructor(string _message) public {
-        message = _message;
+		message = _message;
+		createdTime = now;
 		owner = msg.sender;
-    }
-	function get() public view returns (string _message) {
-		require(owner == msg.sender);
+	}
+
+	function getMessage() public view returns (string _message) {
         return message;
+    }
+}
+```
+
+# 6
+```javascript
+pragma solidity ^0.4.24;
+
+contract TimeCapsule {
+	string message;
+	address owner;
+	uint createdTime;
+
+	constructor(string _message) public {
+		message = _message;
+		createdTime = now;
+		owner = msg.sender;
+	}
+
+	function getMessage() public view returns (string _message) {
+		require(owner == msg.sender);
+		if (now > creationTime + 365 days) {
+            return message;
+        } else {
+            return "Vous ne pouvez pas lire le message avant 1 an !";
+        }
     }
 }
 ```
