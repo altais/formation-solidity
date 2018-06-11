@@ -28,7 +28,33 @@
 		const address = document.getElementById("address").value;
 
 		// const address = "0x37848af96c9de9d06243a98551492f8993b2f0cc"
-		const abi = [{"constant":true,"inputs":[],"name":"getMessage","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_message","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
+		const abi = [
+	{
+		"inputs": [
+			{
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMessage",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
 
 		const contract = new web3.eth.Contract(abi, address);
 		 contract.methods.getMessage().call({from: web3.eth.accounts[0]}).then(function(message){
