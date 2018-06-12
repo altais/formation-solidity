@@ -18,26 +18,62 @@
 		<h1>Votre message: </h1>
 		<h1 id="response"></h1>
     <script>
+			if (typeof web3 !== 'undefined') {
+				web3 = new Web3(web3.currentProvider);
+			}
 
-      window.addEventListener('load', function() {
-        if (typeof web3 !== 'undefined') {
-          web3 = new Web3(web3.currentProvider);
-        }
-	  })
-	  async function getMessage() {
-		const address = document.getElementById("address").value;
-
-		// const address = "0x37848af96c9de9d06243a98551492f8993b2f0cc"
-		const abi = [{"constant":true,"inputs":[],"name":"getMessage","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_message","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
-
-		const contract = new web3.eth.Contract(abi, address);
-		 contract.methods.getMessage().call({from: web3.eth.accounts[0]}).then(function(message){
-			 console.log(message)
-			 $("#response").text(message)
-		 }).catch(function(err){
-			 $("#response").text("Vous ne pouvez pas lire le message")
-		 })
+	 	 async function getMessage() {
+			const address = document.getElementById("address").value;
+			const abi = [
+	{
+		"inputs": [
+			{
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMessage",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "test",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
 	}
+]
+			const contract = new web3.eth.Contract(abi, address);
+			let account = await web3.eth.getAccounts()
+			contract.methods.getMessage().call({from: account[0]}).then(function(message){
+				$("#response").text(message)
+			})
+		 .catch(function(err){
+			 $("#response").text("ERREUR: Message non récupéré")
+		 })
+		}
     </script>
   </body>
 </html>
