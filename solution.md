@@ -14,7 +14,7 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 }
 ```
@@ -26,7 +26,7 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 	constructor(string _message) public {
         message = _message;
@@ -45,11 +45,11 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 	constructor(string _message) public {
 		message = _message;
-		createdTime = now;
+		creationTime = now;
 	}
 
 	function getMessage() public view returns (string _message) {
@@ -65,11 +65,11 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 	constructor(string _message) public {
 		message = _message;
-		createdTime = now;
+		creationTime = now;
 		owner = msg.sender;
 	}
 
@@ -86,11 +86,11 @@ pragma solidity ^0.4.24;
 contract TimeCapsule {
 	string message;
 	address owner;
-	uint createdTime;
+	uint creationTime;
 
 	constructor(string _message) public {
 		message = _message;
-		createdTime = now;
+		creationTime = now;
 		owner = msg.sender;
 	}
 

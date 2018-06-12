@@ -20,58 +20,20 @@
     <script>
 			if (typeof web3 !== 'undefined') {
 				web3 = new Web3(web3.currentProvider);
+			} else {
+				$("#response").text("ERREUR: Vous devez installer Metamask")
 			}
 
 	 	 async function getMessage() {
 			const address = document.getElementById("address").value;
-			const abi = [
-	{
-		"inputs": [
-			{
-				"name": "_message",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "getMessage",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "test",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	}
-]
+			const abi = [{"constant":true,"inputs":[],"name":"getMessage","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_message","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]
 			const contract = new web3.eth.Contract(abi, address);
 			let account = await web3.eth.getAccounts()
 			contract.methods.getMessage().call({from: account[0]}).then(function(message){
 				$("#response").text(message)
 			})
 		 .catch(function(err){
-			 $("#response").text("ERREUR: Message non récupéré")
+			 $("#response").text("ERREUR: Message non récupéré,")
 		 })
 		}
     </script>
